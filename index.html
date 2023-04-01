@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="function.js"></script>
+    </head>
+
+    <body id="bod">
+        <h1 id="titulo" class="cTitulo1">TIC TAC TOE</h1>
+        
+        <div id="placar">
+             <span id="player">
+                <b>Jogador - 
+                <h1 id="item">X</h1></b>
+            </span>
+        </div>
+        
+        <section id="tab" class="tabela">
+            <div id="1" class="linha" style="border-top: 0px; border-left: 0px;"  onclick="jogar('1')" data-clicked="false">&nbsp;</div>
+
+            <div id="2" class="linha" style="border-top: 0px;" onclick="jogar('2')" data-clicked="false">&nbsp;</div>
+
+            <div id="3" class="linha" style="border-top: 0px; border-right: 0px;" onclick="jogar('3')" data-clicked="false">&nbsp;</div>
+
+            <div id="4" class="coluna" style="border-left: 0px;" onclick="jogar('4')" data-clicked="false">&nbsp;</div>
+
+            <div id="5" class="coluna" onclick="jogar('5')" data-clicked="false">&nbsp;</div>
+
+            <div id="6" class="coluna" style="border-right: 0px;" onclick="jogar('6')" data-clicked="false">&nbsp;</div>
+
+            <div id="7" class="linha" style="border-bottom: 0px; border-left: 0px;" onclick="jogar('7')" data-clicked="false">&nbsp;</div>
+
+            <div id="8" class="linha" style="border-bottom: 0px;" onclick="jogar('8')" data-clicked="false">&nbsp;</div>
+            
+            <div id="9" class="linha" style="border-bottom: 0px; border-right: 0px;" onclick="jogar('9')" data-clicked="false">&nbsp;</div>
+        </section>
+        <button id="reset" onclick="reseta()"><b>RESET&nbsp;GAME</b></button>
+    </body>
+</html>
